@@ -25,3 +25,19 @@ const estPalindrome = mot => {
 console.log(estPalindrome("RadAr")); // true
 console.log(estPalindrome("KAYAk")); // true
 console.log(estPalindrome("Bora-Bora")); // false
+
+
+//Palindrome exemple 2
+
+function estPalindrome(mot){
+  mot=mot.toLowerCase();
+   let mot2="";
+  for(let i=mot.length-1; i>=0; --i){
+    mot2+=mot[i];
+  };
+ return mot===mot2;
+  };
+
+console.log(estPalindrome("RadAr")); // true
+console.log(estPalindrome("KAYAk")); // true
+console.log(estPalindrome("Bora-Bora")); // false
